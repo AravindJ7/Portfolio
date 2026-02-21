@@ -1,0 +1,117 @@
+.certs-achieve-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 992px) {
+    .certs-achieve-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.category-title {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.3);
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-left: 4px solid #f0f !important;
+}
+
+.achievement-card:hover {
+    border-color: #f0f !important;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+.ach-icon-wrapper {
+    color: #f0f;
+    background: rgba(255, 0, 255, 0.1);
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ach-title {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.ach-desc {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.certs-list {
+    background: var(--card-bg);
+    border: var(--border-dim);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px dashed rgba(0, 255, 65, 0.2);
+    transition: transform 0.2s ease, padding-left 0.2s ease;
+}
+
+.cert-item:last-child {
+    border-bottom: none;
+}
+
+.cert-item:hover {
+    transform: translateX(5px);
+    padding-left: 0.5rem;
+    background: rgba(0, 255, 65, 0.05);
+}
+
+.cert-bullet {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cert-info {
+    flex: 1;
+}
+
+.cert-title {
+    color: var(--text-color);
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+}
+
+.cert-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.cert-issuer {
+    color: #a0a0a0;
+}
+
+.cert-year {
+    color: var(--primary-color-dim);
+}
