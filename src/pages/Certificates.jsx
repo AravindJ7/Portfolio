@@ -127,7 +127,7 @@ const Certificates = () => {
                     {certificateImages.map((img, idx) => (
                         <motion.a
                             key={idx}
-                            href={`/certificates/${img}`}
+                            href={`/${import.meta.env.BASE_URL}certificates/${img}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="cert-image-card"
@@ -138,7 +138,7 @@ const Certificates = () => {
                             style={{ display: 'block', border: '1px solid rgba(0,255,65,0.3)', borderRadius: '4px', overflow: 'hidden', backgroundColor: 'rgba(5,5,5,0.8)' }}
                         >
                             <img
-                                src={`/certificates/${img}`}
+                                src={`${import.meta.env.BASE_URL}certificates/${img}`}
                                 alt={`Certificate ${idx}`}
                                 style={{ width: '100%', height: '200px', objectFit: 'contain', display: 'block' }}
                             />
